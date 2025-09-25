@@ -11,10 +11,10 @@ import {
 } from "@/components/ui/select";
 
 const languages = [
-  { code: "en", name: "English"},
-  { code: "fr", name: "Français"},
-  { code: "de", name: "Deutsch"},
-  { code: "it", name: "Italiano"},
+  { code: "en", name: "English" },
+  { code: "fr", name: "Français" },
+  { code: "de", name: "Deutsch" },
+  { code: "it", name: "Italiano" },
 ];
 
 export function LangSwitcher() {
@@ -27,7 +27,7 @@ export function LangSwitcher() {
     await setLanguage(formData);
   };
 
-  const currentLanguage = languages.find(lang => lang.code === currentLocale);
+  const currentLanguage = languages.find((lang) => lang.code === currentLocale);
 
   return (
     <Select value={currentLocale} onValueChange={handleLanguageChange}>
