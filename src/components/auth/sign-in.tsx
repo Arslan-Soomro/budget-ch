@@ -36,7 +36,7 @@ export default function SignIn() {
   }
 
   return (
-    <Card className="h-full w-full flex-1 border-1 p-6 shadow-lg">
+    <Card className="h-full w-full flex-1 border-1 p-6 shadow-lg sm:max-w-lg">
       <h1 className="text-center text-xl font-semibold">{t("signin")}</h1>
 
       <Form {...form}>
@@ -92,7 +92,7 @@ export default function SignIn() {
           {/* Submit */}
           <Button
             type="submit"
-            className="w-full cursor-pointer rounded-xl py-5 font-bold text-white"
+            className="w-full cursor-pointer rounded-xl py-5 font-bold text-white dark:bg-blue-600"
           >
             {t("signin")}
           </Button>

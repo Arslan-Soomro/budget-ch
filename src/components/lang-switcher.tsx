@@ -28,7 +28,7 @@ export function LangSwitcher() {
 
   return (
     <Select value={currentLocale} onValueChange={handleLanguageChange}>
-      <SelectTrigger className="cursor-pointer !bg-white px-3 py-1 text-center !text-xs text-black [&>svg]:hidden">
+      <SelectTrigger className="cursor-pointer bg-white px-3 py-1 text-center !text-xs dark:bg-zinc-900 [&>svg]:hidden">
         <SelectValue>{currentLocale.toUpperCase()}</SelectValue>
       </SelectTrigger>
       <SelectContent className="min-w-12">

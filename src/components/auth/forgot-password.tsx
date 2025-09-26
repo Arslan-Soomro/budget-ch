@@ -35,7 +35,7 @@ export default function ForgotPassword() {
   }
 
   return (
-    <Card className="h-full w-full flex-1 border-1 p-6 shadow-lg">
+    <Card className="h-full w-full flex-1 border-1 p-6 shadow-lg sm:max-w-lg">
       <h1 className="text-center text-xl font-semibold">
         {t("forgot-password")}
       </h1>
@@ -65,7 +65,7 @@ export default function ForgotPassword() {
           <div className="flex items-center justify-between gap-2">
             <Button
               type="submit"
-              className="w-full flex-1 cursor-pointer rounded-xl bg-blue-800 py-5 font-bold text-white"
+              className="w-full flex-1 cursor-pointer rounded-xl py-5 font-bold text-white dark:bg-blue-600"
             >
               {t("buttons.send-email")}
             </Button>

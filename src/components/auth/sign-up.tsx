@@ -37,7 +37,7 @@ export default function SignUp() {
   }
 
   return (
-    <Card className="h-full w-full flex-1 border-1 p-6 shadow-lg">
+    <Card className="w-full flex-1 border-1 p-6 shadow-lg sm:max-w-lg">
       <h1 className="text-center text-xl font-semibold">{t("signup")}</h1>
 
       <Form {...form}>
@@ -92,7 +92,7 @@ export default function SignUp() {
           />
 
           {/* show password */}
-          <FormItem className="flex items-center justify-between border-0">
+          <FormItem className="flex flex-col items-start justify-between border-0 sm:flex-row sm:items-center">
             <div className="flex items-center gap-2">
               <Checkbox className="cursor-pointer" />
               <span className="text-sm">{t("checkboxes.password")}</span>
@@ -132,7 +132,7 @@ export default function SignUp() {
           {/* Submit */}
           <Button
             type="submit"
-            className="w-full cursor-pointer rounded-xl py-5 font-bold text-white"
+            className="w-full cursor-pointer rounded-xl py-5 font-bold text-white dark:bg-blue-600"
           >
             {t("buttons.create-account")}
           </Button>
