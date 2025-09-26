@@ -1,5 +1,4 @@
 "use client";
-
 import { useLocale } from "next-intl";
 import { setLanguage } from "@/app/actions";
 import {
@@ -27,25 +26,19 @@ export function LangSwitcher() {
     await setLanguage(formData);
   };
 
-  const currentLanguage = languages.find((lang) => lang.code === currentLocale);
-
   return (
     <Select value={currentLocale} onValueChange={handleLanguageChange}>
-      <SelectTrigger className="w-[180px]">
-        <SelectValue>
-          {currentLanguage && (
-            <div className="flex items-center gap-2">
-              <span>{currentLanguage.name}</span>
-            </div>
-          )}
-        </SelectValue>
+      <SelectTrigger className="cursor-pointer !bg-white px-3 py-1 text-center !text-xs text-black [&>svg]:hidden">
+        <SelectValue>{currentLocale.toUpperCase()}</SelectValue>
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent className="min-w-12">
         {languages.map((language) => (
-          <SelectItem key={language.code} value={language.code}>
-            <div className="flex items-center gap-2">
-              <span>{language.name}</span>
-            </div>
+          <SelectItem
+            className="cursor-pointer justify-center px-1 !text-xs [&_span]:hidden"
+            key={language.code}
+            value={language.code}
+          >
+            {language.code.toUpperCase()}
           </SelectItem>
         ))}
       </SelectContent>
