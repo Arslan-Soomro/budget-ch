@@ -1,12 +1,15 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
 
 export function ModeToggle() {
   const { setTheme, theme } = useTheme();
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
+
+  const t = useTranslations("authpages");
 
   return (
     <div
@@ -15,7 +18,7 @@ export function ModeToggle() {
     >
       <span>🌓</span>
       <span className="text-xs font-bold">
-        {theme === "dark" ? "Light mode" : "Dark mode"}
+        {theme === "dark" ? t("light-mode") : t("dark-mode")}
       </span>
     </div>
   );

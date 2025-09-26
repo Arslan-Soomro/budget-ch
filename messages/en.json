@@ -1,7 +1,37 @@
 {
-  "greeting": {
-    "title": "How are you?",
-    "cta": "Click Me"
-  },
-  "intro": "Hi {name}, You have {count, plural, =0 {no followers yet} =1 {one follower} other {# followers}}."
+    "greeting": {
+        "title": "How are you?",
+        "cta": "Click Me"
+    },
+    "intro": "Hi {name}, You have {count, plural, =0 {no followers yet} =1 {one follower} other {# followers}}.",
+    "authpages": {
+        "signup": "Sign up",
+        "signin": "Sign in",
+        "forgot-password": "Password reset",
+        "labels": {
+            "name": "Name",
+            "email": "Email",
+            "password": "Password"
+        },
+        "placeholders": {
+            "name": "Your name",
+            "email": "your@example.com"
+        },
+        "checkboxes": {
+            "password": "Show password",
+            "terms": "I accept the <terms>terms</terms> & the <privacy>privacy</privacy>"
+        },
+        "tip": "Tip: Length ≥ 8, include numbers & letters.",
+        "buttons": {
+            "create-account": "Create account",
+            "google": "with google",
+            "send-email": "Send reset email",
+            "back-to-signin": "Back to sign in"
+        },
+        "already": "Already have an account?",
+        "forgot-pass": "Forgot password?",
+        "no-account-yet": "No account yet?",
+        "dark-mode": "Dark mode",
+        "light-mode": "Light mode"
+    }
 }

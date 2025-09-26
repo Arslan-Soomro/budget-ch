@@ -1,7 +1,37 @@
 {
-  "greeting": {
-    "title": "Comment ça va?",
-    "cta": "Cliquez sur moi"
-  },
-  "intro": "Salut {name}, Vous avez {count, plural, =0 {aucun abonné pour l'instant} =1 {un abonné} other {# abonnés}}."
+    "greeting": {
+        "title": "Comment ça va ?",
+        "cta": "Cliquez-moi"
+    },
+    "intro": "Salut {name}, tu as {count, plural, =0 {aucun abonné pour le moment} =1 {un abonné} other {# abonnés}}.",
+    "authpages": {
+        "signup": "S’inscrire",
+        "signin": "Se connecter",
+        "forgot-password": "Réinitialiser le mot de passe",
+        "labels": {
+            "name": "Nom",
+            "email": "E-mail",
+            "password": "Mot de passe"
+        },
+        "placeholders": {
+            "name": "Votre nom",
+            "email": "votre@example.com"
+        },
+        "checkboxes": {
+            "password": "Afficher le mot de passe",
+            "terms": "J’accepte les <terms>Conditions</terms> & la <privacy>Politique de confidentialité</privacy>"
+        },
+        "tip": "Astuce : longueur ≥ 8, inclure chiffres et lettres.",
+        "buttons": {
+            "create-account": "Créer un compte",
+            "google": "avec Google",
+            "send-email": "Envoyer l’e-mail de réinitialisation",
+            "back-to-signin": "Retour à la connexion"
+        },
+        "already": "Vous avez déjà un compte ?",
+        "forgot-pass": "Mot de passe oublié ?",
+        "no-account-yet": "Pas encore de compte ?",
+        "dark-mode": "Mode sombre",
+        "light-mode": "Mode clair"
+    }
 }

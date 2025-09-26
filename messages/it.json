@@ -1,7 +1,37 @@
 {
-  "greeting": {
-    "title": "Come stai?",
-    "cta": "Cliccami"
-  },
-  "intro": "Ciao {name}, Hai {count, plural, =0 {ancora nessun follower} =1 {un follower} other {# followers}}."
+    "greeting": {
+        "title": "Come stai?",
+        "cta": "Cliccami"
+    },
+    "intro": "Ciao {name}, hai {count, plural, =0 {ancora nessun follower} =1 {un follower} other {# follower}}.",
+    "authpages": {
+        "signup": "Registrati",
+        "signin": "Accedi",
+        "forgot-password": "Reimposta password",
+        "labels": {
+            "name": "Nome",
+            "email": "E-mail",
+            "password": "Password"
+        },
+        "placeholders": {
+            "name": "Il tuo nome",
+            "email": "tuo@example.com"
+        },
+        "checkboxes": {
+            "password": "Mostra password",
+            "terms": "Accetto i <terms>Termini</terms> e l’<privacy>Informativa sulla privacy</privacy>"
+        },
+        "tip": "Suggerimento: lunghezza ≥ 8, includere numeri e lettere.",
+        "buttons": {
+            "create-account": "Crea account",
+            "google": "con Google",
+            "send-email": "Invia e-mail di reimpostazione",
+            "back-to-signin": "Torna al login"
+        },
+        "already": "Hai già un account?",
+        "forgot-pass": "Password dimenticata?",
+        "no-account-yet": "Non hai ancora un account?",
+        "dark-mode": "Modalità scura",
+        "light-mode": "Modalità chiara"
+    }
 }
